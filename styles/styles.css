@@ -44,7 +44,7 @@ h1,h2,h3{
 h3{
 	display: flex;
 	justify-content: center;
-	margin: 50%;
+	margin-top: 50%;
 	
  }
 	span{
