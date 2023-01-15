@@ -1,7 +1,7 @@
 async function getCompletion() {
   try {
     const configuration = new Configuration({
-      apiKey: "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",
+      // apiKey: "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",
     });
 
     const openai = new OpenAIApi(configuration);
