@@ -1,7 +1,5 @@
 *{
-	/* margin: 0; */
 	padding: 0;
-	
 }
 
 body{
@@ -10,8 +8,6 @@ body{
 
 	overflow: hidden;
 	font-family: 'Sigmar One', sans-serif;
-
-
  	text-align: center;
 	background-color: deepskyblue;
 }
@@ -21,6 +17,14 @@ body{
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+}
+
+#start{
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	/* padding-top: 6em; */
 }
 
 #body-q{
@@ -45,13 +49,30 @@ h3{
 	display: flex;
 	justify-content: center;
 	margin-top: 50%;
-	
  }
 	span{
 		color: #88449a;
 	}
 
-p{
+	h4{
+		color: white;
+	}
+
+	h5{
+		color: white;
+		width: 50%;
+		font-weight: 300;
+	}
+
+
+#start p{
+	width: 50%;
+	margin: 1em 7em 2em; 
+	color: white;
+}
+
+#quiz p{
+	width: none;
 	margin: 1em 7em 2em; 
 	color: white;
 }
@@ -61,8 +82,28 @@ p{
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: center;
-	justify-content: center;
+	/* justify-content: center; */
+	width: 60%;
+    overflow: auto;
 }
+
+/* ::-webkit-scrollbar {
+	width: 1px;
+}
+
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 2px rgba(125, 109, 77, 0.444); 
+	border-radius: 10px;
+  }
+   
+
+  ::-webkit-scrollbar-thumb {
+	background: rgba(93, 84, 84, 0.058); 
+	border-radius: 10px;
+  } */
+  
+
 
 .result {
 	background-color: #fff;
@@ -77,30 +118,33 @@ p{
 .result img {
 	object-fit: cover;
 	height: 100%;
-	width: 100%;
+	width: 500%;
 }
 
 button{
-	background-color: white;
+	background-color: rgb(61, 56, 56);
 	border: 0;
-	border-radius: 15px;
+	/* border-radius: 15px; */
 
 	padding: 15px;
 	margin: 10px;
 	width: 300px;
 
 	margin-bottom: 20px;
-  	margin-top: 60px;
+  	margin-top: 30px;
 }
 
+
 .s-button{
-	background-color: #88449a;
+	/* background-color: #88449a; */
 }
 
 .q-button {
 	padding: 15px;
 	margin: 10px;
-	width: 300px;
+	width: 10em;
+	background-color: white;
+	border-radius: 5px;
 }
 
 .s-button:hover{
@@ -119,14 +163,20 @@ button:focus {
  
 /* quizzz */
 .question{
+	display: flex;
+	justify-content: center;
+	align-items: center;
   font-size: 23px;
   margin-bottom: 10px;
   color: white;
+font-weight: 300;
+padding: 0 5em 1em;
 }
 .answers {
   margin-bottom: 20px;
   text-align: left;
   display: inline-block;
+  color: rgb(45, 41, 41);
 }
 .answers label{
   display: block;
@@ -221,7 +271,7 @@ button:focus {
 	  display: inline-block;
 	  padding: 0.5em 1em;
 	  background: #88449a;
-	  border-radius: 15px;
+	  border-radius: 5px;
 	  color: #fff;
 	  text-decoration: none;
   }

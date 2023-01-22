@@ -1,29 +1,29 @@
-async function getCompletion() {
-  try {
-    const configuration = new Configuration({
-      // apiKey: "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",
-    });
+// async function getCompletion() {
+//   try {
+//     const configuration = new Configuration({
+//       // apiKey: "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",
+//     });
 
-    const openai = new OpenAIApi(configuration);
+//     const openai = new OpenAIApi(configuration);
 
-    // const completionFunction = async () => {
-    const response = await openai.createCompletion({
-      model: "text-davinci-003",
-      prompt: "Maak woordenschatvragen per alinea over het volgende onderwerp voor leerlingen van het 4e leerjaar met synonieme antwoorden als meerkeuzevragen met het juiste antwoord:\n\nNa het doorzoeken van honderden sollicitaties heeft Geronimo eindelijk de perfecte assistent gevonden. Pinky Punk is jong, hip en een kei met computers. Maar Geronimo let niet op en heeft het contract al getekend als hij erachter komt dat ze niet alleen veel te jong is, maar ook nog eens heel brutaal. Ze organiseert een nieuwjaarsfeest op de Noordpool, waar ze de hele Stilton-familie naartoe sleept. Geronimo houdt niet van Pinky's wilde levensstijl, luide muziek en nieuwe snufjes. Maar Pinky zit ook vol goede ideeën en krijgt sensationele dingen voor elkaar. Het leven van Geronimo zal nooit meer hetzelfde zijn.\n\n1. Wat is Pinky's leeftijd? \nA. Jong \nB. Oud \nC. Middelbaar \nD. Volwassen \nAntwoord: A. Jong\n\n2. Wat voor soort persoon is Pinky?\nA. Rustig \nB. Luidruchtig \nC. Creatief \nD. Gemiddeld \nAntwoord: C. Creatief\n\n3. Wat organiseert Pinky?\nA. Een kerstfeest \nB. Een nieuwjaarsfeest \nC. Een verjaardagsfeest \nD. Een bruiloftsfeest \nAntwoord: B. Een nieuwjaarsfeest\n\n4. Waar organiseert Pinky haar nieuwjaarsfeest? \nA. Op het strand \nB. In de bergen \nC. In de woestijn \nD. Op de Noordpool \nAntwoord: D. Op de Noordpool\n\n5. Wat vindt Geronimo niet",
-      temperature: 0.7,
-      max_tokens: 256,
-      top_p: 1,
-      frequency_penalty: 0,
-      presence_penalty: 0,
-    });
+//     // const completionFunction = async () => {
+//     const response = await openai.createCompletion({
+//       model: "text-davinci-003",
+//       prompt: "Maak woordenschatvragen per alinea over het volgende onderwerp voor leerlingen van het 4e leerjaar met synonieme antwoorden als meerkeuzevragen met het juiste antwoord:\n\nNa het doorzoeken van honderden sollicitaties heeft Geronimo eindelijk de perfecte assistent gevonden. Pinky Punk is jong, hip en een kei met computers. Maar Geronimo let niet op en heeft het contract al getekend als hij erachter komt dat ze niet alleen veel te jong is, maar ook nog eens heel brutaal. Ze organiseert een nieuwjaarsfeest op de Noordpool, waar ze de hele Stilton-familie naartoe sleept. Geronimo houdt niet van Pinky's wilde levensstijl, luide muziek en nieuwe snufjes. Maar Pinky zit ook vol goede ideeën en krijgt sensationele dingen voor elkaar. Het leven van Geronimo zal nooit meer hetzelfde zijn.\n\n1. Wat is Pinky's leeftijd? \nA. Jong \nB. Oud \nC. Middelbaar \nD. Volwassen \nAntwoord: A. Jong\n\n2. Wat voor soort persoon is Pinky?\nA. Rustig \nB. Luidruchtig \nC. Creatief \nD. Gemiddeld \nAntwoord: C. Creatief\n\n3. Wat organiseert Pinky?\nA. Een kerstfeest \nB. Een nieuwjaarsfeest \nC. Een verjaardagsfeest \nD. Een bruiloftsfeest \nAntwoord: B. Een nieuwjaarsfeest\n\n4. Waar organiseert Pinky haar nieuwjaarsfeest? \nA. Op het strand \nB. In de bergen \nC. In de woestijn \nD. Op de Noordpool \nAntwoord: D. Op de Noordpool\n\n5. Wat vindt Geronimo niet",
+//       temperature: 0.7,
+//       max_tokens: 256,
+//       top_p: 1,
+//       frequency_penalty: 0,
+//       presence_penalty: 0,
+//     });
 
-    console.log(completion.data.choices[0].text);
-    // };
+//     console.log(completion.data.choices[0].text);
+    
 
-    return response;
-  } catch (err) {
-  }
-}
+//     return response;
+//   } catch (err) {
+//   }
+// };
 
 // getCompletion();
 
@@ -44,43 +44,43 @@ async function getCompletion() {
 (function () {
   const myQuestions = [
     {
-      question: "Wat is Pinky's leeftijd?",
+      question: "Wat gebeurde er toen het buurmeisje met haar tovervinger zwaaide?",
       answers: {
-        a: "Jong",
-        b: "Oud",
-        c: "Middelbaar"
-      },
-      correctAnswer: "a"
-
-    },
-    {
-      question: "Wat voor soort persoon is Pinky?",
-      answers: {
-        a: "Rustig",
-        b: "Luidruchtig",
-        c: "Creatief"
+        a: "Ze veranderde de Kreitjes in eenden",
+        b: "Ze veranderde de Kreitjes in vogels",
+        c: "Ze veranderde de Kreitjes in mensen met vleugels"
       },
       correctAnswer: "c"
+
     },
     {
-      question: "Wat organiseert Pinky?",
+      question: "Wat doen de Kreitjes voor de lol?",
       answers: {
-        a: " Een kerstfeest ",
-        b: "Een nieuwjaarsfeest ",
-        c: "Een verjaardagsfeest ",
-
+        a: "Eieren zoeken",
+        b: "Watervogels jagen",
+        c: "Vissen vangen"
       },
       correctAnswer: "b"
     },
     {
-      question: "Waar organiseert Pinky haar nieuwjaarsfeest?",
+      question: "Wat doet het buurmeisje als de Kreitjes weigeren te stoppen met jagen?",
       answers: {
-        a: "Op het strand",
-        b: " In de bergen ",
-        c: " In de woestijn",
+        a: "Ze stuurt beren naar hen toe",
+        b: "Ze geeft ze een boete",
+        c: "Ze zwaait met haar tovervinger",
 
       },
       correctAnswer: "c"
+    },
+    {
+      question: "Wat gebeurt er de volgende ochtend als de Kreitjes wakker worden?",
+      answers: {
+        a: "Ze hebben vleugels",
+        b: " Ze hebben staarten ",
+        c: " Ze hebben klauwen",
+
+      },
+      correctAnswer: "a"
     },
   ];
 
