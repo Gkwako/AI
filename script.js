@@ -44,40 +44,40 @@
 (function () {
   const myQuestions = [
     {
-      question: "Wat gebeurde er toen het buurmeisje met haar tovervinger zwaaide?",
+      question: "Wat is de naam van de assistent van Geronimo?",
       answers: {
-        a: "Ze veranderde de Kreitjes in eenden",
-        b: "Ze veranderde de Kreitjes in vogels",
-        c: "Ze veranderde de Kreitjes in mensen met vleugels"
+        a: "Pinky Punk",
+        b: "Geronimo Stilton",
+        c: "Noordpool"
       },
-      correctAnswer: "c"
+      correctAnswer: "a"
 
     },
     {
-      question: "Wat doen de Kreitjes voor de lol?",
+      question: "Wat voor iemand is Pinky Punk?",
       answers: {
-        a: "Eieren zoeken",
-        b: "Watervogels jagen",
-        c: "Vissen vangen"
+        a: "Een computerkei",
+        b: "Een oude man",
+        c: "Een musicalster"
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "Waar organiseert Pinky Punk een nieuwjaarsfeest?",
+      answers: {
+        a: "Bij Geronimo",
+        b: "Op de Noordpool",
+        c: "In de stad",
+
       },
       correctAnswer: "b"
     },
     {
-      question: "Wat doet het buurmeisje als de Kreitjes weigeren te stoppen met jagen?",
+      question: "Wat vind Geronimo niet leuk aan Pinky's levensstijl?",
       answers: {
-        a: "Ze stuurt beren naar hen toe",
-        b: "Ze geeft ze een boete",
-        c: "Ze zwaait met haar tovervinger",
-
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Wat gebeurt er de volgende ochtend als de Kreitjes wakker worden?",
-      answers: {
-        a: "Ze hebben vleugels",
-        b: " Ze hebben staarten ",
-        c: " Ze hebben klauwen",
+        a: "Haar luide muziek",
+        b: "Haar nieuwe snufjes",
+        c: "Haar jonge leeftijd ",
 
       },
       correctAnswer: "a"
